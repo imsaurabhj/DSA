@@ -8,13 +8,13 @@ bool findpath(int maze[SIZE][SIZE], int path[SIZE][SIZE],int x=0,int y=0)
     if(x==SIZE-1 && y==SIZE-1)
         return true;
     int nx=x+1, ny=y;                          //nx=new x-co-ordiante, ny=new y-co-ordinate
-    if(nx<SIZE && ny<SIZE && path[nx][ny]!=1 && maze[nx][ny]!=0)
+    if(nx<SIZE && ny<SIZE && maze[nx][ny]!=0)
     {
         if(findpath(maze,path,nx,ny))
             return true;
     }
     nx=x,ny=y+1;
-    if(nx<SIZE && ny<SIZE && path[nx][ny]!=1 && maze[nx][ny]!=0)
+    if(nx<SIZE && ny<SIZE && maze[nx][ny]!=0)
     {
         if(findpath(maze,path,nx,ny))
             return true;
