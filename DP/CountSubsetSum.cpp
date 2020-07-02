@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-//using simple recursion
+//using simple recursion 
 int CountSubsetSum(int arr[], int n, int sum)
 {
     if(n==0)
